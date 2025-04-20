@@ -1,0 +1,14 @@
+[project]
+name = "jpeg2000-reader"
+version = "0.1.0"
+description = "JPEG2000-reader for JPEG2000 DCI images"
+authors = [{name="BGI", email="mxf-reader@sherpadown.net"}]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+	"bitstring"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
