@@ -14,7 +14,7 @@ $ source .venv/bin/activate
 $ uv sync
 ```
 
-#### Using
+### Using
 
 ```
 $ python -m jpeg2000_reader <filename>
@@ -103,5 +103,20 @@ data: 59 bytes : 808080808080808080808080808080808080808080808080808080808080808
 
 
 [EOC] End of codestream                       (FFD9)
+```
+
+
+
+### Use with Docker
+
+```
+$ make docker.build         # build docker
+$ make docker.run.tests     # run tests
+```
+
+or
+
+```
+$ docker run -v "/local/path/assets:/assets" -it --rm jpeg2000-reader:latest /assets/your.j2c
 ```
 
