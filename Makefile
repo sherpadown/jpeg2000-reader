@@ -6,3 +6,7 @@ docker.run:
 
 docker.run.tests:
 	docker run -v "$(PWD)/tests/assets:/assets" -it --rm jpeg2000-reader:latest /assets/black_2k.j2c
+
+bin:
+	nuitka src/jpeg2000_reader/__main__.py --output-filename=jpeg2000-reader --remove-output --follow-imports
+
